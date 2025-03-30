@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+body {
+    background: linear-gradient(135deg, #f3d6e4, #e2a7c3);
+    font-family: 'Poppins', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(soft\ pink\ template.jpg);
+}
+
+.container {
+    width: 500px;
+    min-height: 350px;
+    background: white; /* Soft pink paper effect */
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    background-image: url(bow.jpg);
+   
+}
+
+h2 {
+    font-family: 'Garamond', serif;
+    font-size: 24px;
+    color: #9a4770; /* Vintage deep pink */
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0.5px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    width: 100%;
+    
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#taskInput {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+#addTaskBtn {
+    background: linear-gradient(135deg, #f3d6e4, #e2a7c3);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.heart-icon {
+    cursor: pointer;
+    margin-left: 10px; /* Spacing from text */
+    color: rgb(187, 177, 177); /* Default color */
+}
+.heart-icon.active {
+    color: rgb(222, 132, 198); /* When clicked */
+}
+.done {
+    text-decoration: line-through;
+    color: #999; /* Light gray to show task is done */
+    opacity: 0.6;
+    transition: opacity 1s ease-in-out; /* Smooth fading effect */
+}
